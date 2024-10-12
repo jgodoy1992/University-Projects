@@ -1,0 +1,56 @@
+Columns description:
+'agi' - bonus to agility
+'agiint' - bonus to agility OR intellect
+'agistr' - bonus to agility OR strength
+'agistrint' - bonus to agility OR strength OR intellect
+'arcres' - arcane magic resistance
+'armor' - armor, provided by item
+'atkpwr' - bonus to attack power
+'avoidance' - bonus to avoidance
+'classes' - classes, which can use the item
+'cooldown' - cooldown after using item (in hours)
+'critstrkrtng' - critical strike rating bonus
+'dmg' - damage
+'dmgmax1' - maximum damage
+'dmgmin1' - minimum damage
+'dodgertng' - bonus to dodge rating
+'dps' - damage per second of weapon
+'dura' - durability of item
+'firres' - fire magic resistance
+'frores' - frost magic resistance
+'hastertng' - bonus to haste rating
+'healthrgn' - bonus to health regeneration
+'holres' - holy magic resistance
+'int' - bonus to intellect
+'lifesteal' - amount of lifesteal
+'manargn' - bonus to mana regeneration
+'mastrtng' - bonus to mastery rating
+'mledmgmax' - maximum melee damage of weapon
+'mledmgmin' - minimum melee damage of weapon
+'mledps' - melee damage per second
+'mlespeed' - melee attack speed
+'name_enus' - name of item
+'natres' - nature magic resistance
+'nsockets' - number of sockets in item
+'parryrtng' - bonus to parry rating
+'pvppower' - pvp power of item
+'quality' - quality of item
+'reqarenartng' - required arena rating to use item
+'reqlevel' - required level for item
+'resirtng' - bonus to resilence rating
+'rgdatkpwr' - bonus to ranged attack power
+'rgdcritstrkrtng' - bonus to ranged critical strike rating
+'rgddmgmax' - maximum ranged damage of weapon
+'rgddmgmin' - minimumranged damage of weapon
+'rgddps' - damage per second of ranged weapon
+'rgdhastepct' - bonus to ranged haste
+'rgdspeed' - attack speed of ranged weapon
+'slotbak' - equip slot of item
+'socket1', 'socket2', 'socket3' - item sockets
+'speedbonus' - bonus to speed
+'splcritstrkrtng' - bonus to spell critical strike rating
+'splhastepct' - spell haste bonus
+'splpwr' - spell power bonus
+'sta' - stamina bonus
+'str' - strength bonus
+'strint' - bonus to strength OR intelligence

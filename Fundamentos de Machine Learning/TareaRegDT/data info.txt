@@ -1,0 +1,11 @@
+
+    age: age in years
+    sex
+    bmi: body mass index
+    bp: average blood pressure
+    s1: T-Cells (a type of white blood cells)
+    s2: low-density lipoproteins
+    s3: high-density lipoproteins
+    s4: thyroid stimulating hormone
+    s5: lamotrigine
+    s6: blood sugar level

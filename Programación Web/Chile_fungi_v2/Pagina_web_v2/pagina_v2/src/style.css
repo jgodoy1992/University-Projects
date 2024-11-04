@@ -1,0 +1,274 @@
+
+body{
+  font-family: sans-serif;
+}
+
+#titulo{
+  margin-bottom: 30px;
+  background-color: #568203;
+}
+
+#gourmet{
+  background: white;
+}
+
+#magicos{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #568203;
+}
+
+i{
+  cursor:pointer;
+}
+
+.navbar{
+  display: flex;
+  background-color: #568203;
+}
+
+.cart{
+  position: relative;
+  background: white;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.cartAmount{
+  font-size: 20px;
+  position: absolute;
+  top:-15px;
+  right:-10px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.titulo-magico{
+  color: white;
+}
+
+.shop{
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.item{
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.detalles{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.precio-cantidad{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  gap:8px;
+}
+
+.descripcion{
+  margin-bottom: 30px;
+}
+
+.titulo{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+ /*  .carrito {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  } */
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .carousel-inner{
+    height: 100%;
+    width:100%
+  }
+
+  .carousel-item:after {
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+
+  .carousel-caption h5{
+    color: white;
+    font-size: 5rem;
+
+  }
+
+  .carousel-caption p{
+    font-size: 2.5rem;
+  }
+
+  .carousel-item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .login-btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-center{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .homeBtn, .checkout, .vaciar{
+    background-color: #568203;
+    color:white;
+    border:none;
+    padding: 6px;
+    border-radius: 3px;
+  }
+
+  .vaciar{
+    background-color: red;
+  }
+
+  .shopping-cart{
+    display:grid;
+    grid-template-columns: repeat(1, 500px);
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+  }
+
+  .titulo-precio-x{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .titulo-precio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cart-item-precio{
+    background-color: black;
+    color:white;
+    border-radius: 4px;
+    padding: 3px 6px;
+  }
+
+  .text-area{
+    resize: none;
+  }
+
+  .error{
+    text-align: center;
+    color: red;
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+  button:hover span {
+    width: 100%;
+  }
+  
+  button:hover {
+    border: none;
+  }
+
+  @media (max-width: 1024px){
+    #titulo{
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 1024px){
+    .shop{
+      grid-template-columns: repeat(2, 210px);
+    }
+  }
+
+  @media (max-width: 512px){
+    .shop{
+      grid-template-columns: repeat(1, 210px);
+    }
+  }

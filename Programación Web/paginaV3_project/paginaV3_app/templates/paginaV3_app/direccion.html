@@ -1,0 +1,41 @@
+{% extends 'paginaV3_app/base.html' %}
+{% load static %}
+
+{% block title %}Perfil{% endblock title %}
+{% block main-content %}
+    <div class="container my-5">
+        <div class="row">
+            <h3>Perfil de {{ request.user }}</h3>
+        
+            <div class="col-sm-2 border-end">
+                <ul class="list-unstyled">
+                    <li class="d-grid"><a href="{% url 'perfil' %}" class="btn">Perfil</a>
+                    </li>
+                    <li class="d-grid"><a href="{% url 'direcciones' %}" class="btn ">Mis Direcciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8 offset-sm-1">
+                <div class="row">
+                    {% for dir in direc %}
+                        <div class="col-sm-6">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <h3>Direccion: {{ forloop.counter }}</h3>
+                                    <p>Nombre: {{ dir.nombre }}</p>
+                                    <p>Direccion: {{ dir.direccion }}</p>
+                                    <p>Comuna: {{ dir.comuna }}</p>
+                                    <p>Ciudad: {{ dir.ciudad }}</p>
+                                    <p>Region: {{ dir.region }}</p>
+                                    <p>Telefono: {{ dir.telefono }}</p>
+                                    <p>ZipCode: {{ dir.zipcode }}</p>
+                                    <p class="texct-center"><a href="{% url 'actualiza_dir' pk=dir.id %}" type="button" class="btn btn-success">Editar</a>  <a href="{% url 'elimina_dir' pk=dir.id %}" type="button" class="btn btn-danger" >Eliminar</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main-content %}

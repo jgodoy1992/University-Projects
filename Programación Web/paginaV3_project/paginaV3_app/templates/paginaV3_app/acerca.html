@@ -1,0 +1,44 @@
+{% extends 'paginaV3_app/base.html' %}
+{% load static %}
+{% block title %}Acerca de Nosotros{% endblock title %}
+
+{% block main-content %}
+    <div class="container mt-5">
+        <div class="titulo" style="text-align: center;">
+            <h1>Acerca de Nosotros</h1>
+            <br>
+            <p>En nuestra tienda, encontrarás una extensa selección de hongos de alta calidad provenientes de diferentes partes del mundo. Trabajamos con cultivadores especializados y recolectores de hongos para asegurarnos de ofrecer productos frescos y de la mejor calidad. Nuestro catálogo incluye hongos comestibles populares como champiñones, setas shiitake, portobello, maitake, ostra y muchos más. </p>    
+        </div>
+        <div class="titulo mt-5" style="text-align: center;">
+            <h1>Quiénes Somos</h1>
+            <br>
+            <p>Somos estudiantes de Ingeniería en Informática de DuocUC, actualmente cursando el segundo año de la carrera.
+                Este es nuestro proyecto para la asignatura de Programación Web, construida con Django 4.2. Esta pagina nace a partir de la experiencia de Joaquín Godoy realizando cultivo de hongos ostra a manera de hobby durante la pandémia.
+            </p>
+        </div>
+        <div class="integrantes" style="text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 210px);
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 30px;">
+            <div class="item">
+                <img class="profile-img" width="200" src="{% static 'paginaV3_app/imagenes/integrantes/gery.jpg' %}" alt="" style="border-radius: 100%;">
+                <div class="detalle">
+                    <h3>Geraldine Castro</h3>
+                    <h6>17.252.854-6</h6>
+                    <h6>ger.castroc@duocuc.cl</h6>
+                </div>
+            </div>
+            <div class="item">
+                <img class="profile-img" width="200" src="{% static 'paginaV3_app/imagenes/integrantes/joaq.png' %}" alt="" style="border-radius: 100%;">
+                <div class="detalle">
+                    <h3>Joaquín Godoy</h3>
+                    <h6>18.170.114-5</h6>
+                    <h6>joaq.godoy@duocuc.cl</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock main-content %}

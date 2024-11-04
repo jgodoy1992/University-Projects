@@ -1,0 +1,38 @@
+{% extends 'paginaV3_app/base.html' %}
+{% load static %}
+
+{% block title %}Log In{% endblock title %}
+
+{% block main-content %}
+<div class="container">
+    <div class="row my-4">
+        <div class="col-sm-6 offset-sm-3">
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Mensaje</strong> {{msg}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <h2 style="text-align:center;">Log In</h2>
+            <br>
+            <div class="col-sm-12" style="text-align:center;">
+                <form action="" method="post" novalidate class="shadow p-5">
+                    {% csrf_token %}
+                    {% for fm in form %}
+                        {{ fm.label_tag }} {{ fm }} <small class="text-danger" >{{ fm.errors|striptags }}</small>
+                        <br>
+                    {% endfor %}
+                    <input type="submit" value="Log In!" class="btn btn-primary"><br>
+                    <div class="text-center text-primary fw-bold">
+                        <small>No tiene cuenta? <a href="{% url 'registro' %}">Registrate</a></small>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>
+{% endblock main-content %}

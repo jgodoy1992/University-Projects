@@ -1,0 +1,32 @@
+{% extends 'paginaV3_app/base.html' %}
+{% load static %}
+{% block title %}Categoria{% endblock title %}
+{% block main-content %}
+    <div class="text-center mt-5">
+        {% for prod in producto %}
+            {% if forloop.first %}
+                <h1>{{prod.get_categoria_display}}</h1>
+            {% endif %}
+        {% endfor %}
+    </h1></div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="row">
+                    {% for prod in producto %}
+                        <div class="col text-center mb-4">
+                            <a href="{% url 'detalle_producto' prod.id %}" class="btn">
+                                <div>
+                                    <img src="{{prod.prod_imagen.url}}" width="200">
+                                    <div class="fw-bold">{{prod.titulo}}</div>
+                                    <div class="fw-bold">${{prod.precio}}</div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main-content %}
+

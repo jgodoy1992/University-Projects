@@ -1,0 +1,22 @@
+{% extends 'paginaV3_app/base.html' %}
+{% load static %}
+
+{% block title %}Actualizacion Datos{% endblock title %}
+
+{% block main-content %}
+    <div class="container my-5">
+        <div class="col-sm-6 offset-3">
+            <h3>Actualización Dirección de {{ request.user }}</h3>
+            <form action="" method="post" novalidate>
+                {% csrf_token %}
+                {% for fm in form %}
+                    {{ fm.label_tag }} {{ fm }} <small class="text-danger" >{{ fm.errors|striptags }}</small>
+                    <br>
+                {% endfor %}
+                <div class="col-12 mt-3">
+                    <input type="submit" class="btn btn-success" value="Guardar">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock main-content %}

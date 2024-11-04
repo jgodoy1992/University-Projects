@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+  }
+
+ a {
+  text-decoration: none;
+ }
+
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+
+  .carousel-caption h5{
+    color: white;
+    font-size: 5rem;
+
+  }
+
+  .carousel-caption p{
+    font-size: 2.5rem;
+  }
+
+  .carousel-item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .hongoProd {
+    background-color:#fff;background-image:linear-gradient(#fff7ef, #fff);
+    background-image:-webkit-linear-gradient(#fff7ef, #fff);
+    background-image:-moz-linear-gradient(#fff7ef, #fff);
+    background-image:-ms-linear-gradient(#fff7ef, #fff);
+    background-image:-o-linear-gradient(#fff7ef, #fff);
+    padding:50px 40px;
+    border:1px solid #efe8e1;
+    padding-bottom:20px;
+  }
+
+  .smbg{
+    background-color:#fff;
+    background-image:linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-webkit-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-moz-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-ms-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+    background-image:-o-linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+  }
+
+  .prodgoodness img{
+    width:100%;
+}
+
+  .prodPro{
+    color:#636362;
+    font-size:22px;
+    line-height:22px;
+    margin-bottom:15px;
+    width:43%;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .titulo{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .integrantes{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 210px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .profile-img{
+    border-radius: 100%;
+  }
